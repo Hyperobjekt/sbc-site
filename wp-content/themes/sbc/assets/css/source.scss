@@ -167,6 +167,51 @@ div.wp-block-buttons {
   text-align: right;
 }
 
+.content-column {
+  h1 {
+    font-size: 56px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 1px !important;
+  }
+  h3 {
+    font-family: var(
+      --font-headings,
+      -apple-system,
+      "Roboto Condensed",
+      Oxygen-Sans,
+      Ubuntu,
+      Cantarell,
+      "Helvetica Neue",
+      sans-serif
+    );
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(
+      --font-headings,
+      -apple-system,
+      Arvo,
+      Oxygen-Sans,
+      Ubuntu,
+      Cantarell,
+      "Helvetica Neue",
+      sans-serif
+    );
+    margin-bottom: 1px !important;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 1px !important;
+  }
+}
+
 @media (min-width: 782px) {
   .home-cents > .wp-block-column:not(:first-child) {
     margin-left: 10em;
