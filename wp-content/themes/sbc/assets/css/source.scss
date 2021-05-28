@@ -155,60 +155,99 @@ div.wp-block-buttons {
   display: inline-block;
 }
 
-.content-column
+.content
   > *[class*="inner-container"]
-  > *:not(.content-column):not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+  > *:not(.content):not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
   max-width: 100%;
   padding-right: 10%;
 }
 
-.anchor-nav > * > ul {
+.sidebar > * > ul {
   list-style-type: none;
   text-align: right;
 }
 
-.content-column {
-  h1 {
-    font-size: 56px;
-    font-weight: 300;
+.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+  opacity: 0;
+}
+
+#wpforms-117-field_1 {
+  &:before {
+    position: absolute;
   }
-  h2 {
-    font-size: 40px;
-    margin-bottom: 1px !important;
+}
+
+.subpage {
+  & .content {
+    h1 {
+      font-size: 56px;
+      font-weight: 300;
+    }
+    h2 {
+      font-size: 40px;
+      margin-bottom: 1px !important;
+    }
+    h3 {
+      font-family: var(
+        --font-headings,
+        -apple-system,
+        "Roboto Condensed",
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif
+      );
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 2.7px;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: var(
+        --font-headings,
+        -apple-system,
+        Arvo,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif
+      );
+      margin-bottom: 1px !important;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 1px !important;
+    }
+    ul {
+      margin-top: 1px;
+      padding-left: 35px;
+      font-size: 16px;
+    }
   }
-  h3 {
-    font-family: var(
-      --font-headings,
-      -apple-system,
-      "Roboto Condensed",
-      Oxygen-Sans,
-      Ubuntu,
-      Cantarell,
-      "Helvetica Neue",
-      sans-serif
-    );
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 2.7px;
+  & .sidebar {
+    max-width: fit-content;
+    float: right;
+    li {
+      text-align: left;
+    }
   }
-  h4 {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: var(
-      --font-headings,
-      -apple-system,
-      Arvo,
-      Oxygen-Sans,
-      Ubuntu,
-      Cantarell,
-      "Helvetica Neue",
-      sans-serif
-    );
-    margin-bottom: 1px !important;
-  }
-  p {
-    font-size: 16px;
-    margin-top: 1px !important;
+}
+
+.site-header {
+  .primary-navigation {
+    & li:nth-last-child(1) {
+      a {
+        @extend .has-text-red-color;
+      }
+    }
+    & li:nth-last-child(2) {
+      a {
+        @extend .has-text-red-color;
+      }
+    }
   }
 }
 
